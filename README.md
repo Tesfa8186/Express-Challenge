@@ -1,5 +1,6 @@
 # Title - Note Taker Application
 
+
 # Description
 
 This Note Taker application helps the user to write and save any notes.
@@ -14,11 +15,6 @@ The application’s front end has already been created. It's your job to build t
 AS A business owner
 I WANT to be able to write and save notes,
 SO THAT I can organize my thoughts and keep track of tasks I need to complete.
-
-
-
-## Acceptance Criteria
-
 WHEN I open the Note Taker
 THEN I am presented with a landing page with a link to a notes page.
 WHEN I click on the link to the notes page,
@@ -41,13 +37,14 @@ Installation of this application would be on the terminal using localhost server
 
 ## Usage
 This application will help the user to record and save daily noets of business or private.
+On a busy environment it's important to note daily business or private thought to keep life in smouth movemnt.
 
 
 
 ## Links
-[Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
+[Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/1-express-challenge-demo-01.png)
 
-[Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
+[Note titled “Today's Activity” reads, “Daily note,” with other notes listed on the left.](./Assets/2-express-challenge-demo-02.png)
 
 
 
