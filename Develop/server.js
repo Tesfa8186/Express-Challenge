@@ -25,9 +25,12 @@ app.get("*", (req,res) => {
 });
  
 app.post("/api/notes", (req, res) => {
-    const receivedData = req.body;});
+    const receivedData = req.body;
+});
 
-
+app.delete("/api/notes/:id", (req, res) => {
+        const deleteNote = re.body;
+        });
 
 
 
