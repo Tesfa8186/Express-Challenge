@@ -47,6 +47,10 @@ On a busy environment it's important to note daily business or private thought t
 
 [Note titled “Today's Activity” reads, “Daily note,” with other notes listed on the left.](./Assets/2-express-challenge-demo-02.png)
 
+[https://drive.google.com/file/d/1nahsuKsoFVS0v_UigAZ7mjiNh2_GReQn/view](https://drive.google.com/file/d/1nahsuKsoFVS0v_UigAZ7mjiNh2_GReQn/view)
+
+
+
 
 
 
