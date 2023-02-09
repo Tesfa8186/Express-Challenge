@@ -6,7 +6,8 @@
 This Note Taker application helps the user to write and save any notes.
 This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
+The application’s front end has already been created. 
+My task was to build the back end, connect the two, and then deploy the entire application to Heroku.
 
 
 
