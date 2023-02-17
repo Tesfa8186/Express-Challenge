@@ -43,16 +43,14 @@ On a busy environment it's important to note daily business or private thought t
 
 
 ## Links
-[Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/1-express-challenge-demo-01.png)
 
-[Note titled “Today's Activity” reads, “Daily note,” with other notes listed on the left.](./Assets/2-express-challenge-demo-02.png)
+[Screen Shot of the Note Taker](public/images/1-Screenshot-Note-Taker-01.png)
 
-[https://drive.google.com/file/d/1nahsuKsoFVS0v_UigAZ7mjiNh2_GReQn/view](https://drive.google.com/file/d/1nahsuKsoFVS0v_UigAZ7mjiNh2_GReQn/view)
+[Screen Shot of Note Taker with Saved-Delete option](public/images/2-With-Saved-Delete-demo-02.png)
 
-[Note-Taker-App-README.md](./Assets/Note-Taker-App-README.md)
+[The URL of GitHub Repository](https://github.com/Tesfa8186/Express-Challenge)
 
-
-
+[The URL of Heroku deployemnet]()
 
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
 
