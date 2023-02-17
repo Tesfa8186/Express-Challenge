@@ -4,7 +4,7 @@ const fs = require("fs");
 const { parse } = require("path");
 const { query } = require("express");
 const app = express();
-const dbData = require('../db/db.json');
+const dbData = require('./db/db.json');
 
 
 // middleware
