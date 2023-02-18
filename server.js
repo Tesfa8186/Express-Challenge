@@ -1,41 +1,69 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const { parse } = require("path");
-const { query } = require("express");
+const { join } = require("path");
+const { v4: uuidv4 } = require("uuid");
+
+const dbData = require("./db/db.json");
+
 const app = express();
-const dbData = require('./db/db.json');
 
-
-// middleware
+// middleware for parsing JSON and urlencoded from data
 app.use(express.static("public"));
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-
-// Creating HTML & API routes with response (return)
+// GET Route for notes page
 app.get("/notes", (req, res) => {
-    res.sendFile(path.join(__dirname, "./public/notes.html"))
+  res.sendFile(join(__dirname, "./public/notes.html"));
 });
 
+// GET Route to retrive saved note
 app.get("/api/notes", (req, res) => res.json(dbData));
 
-app.get("*", (req,res) => {
-    res.sendFile(path.join(__dirname,"./public/index.html"))
+// GET Route for homepage
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/index.html"));
 });
- 
+
+// POST Route to add new text (Data)
 app.post("/api/notes", (req, res) => {
-    const receivedData = req.body;
+  try {
+    const filePath = join(__dirname, "./db/db.json");
+    // receiving the data from client
+    const receivedNote = req.body;
+
+    //   adding an id to the data Object
+    const noteToSave = {
+      id: uuidv4(),
+      ...receivedNote,
+    };
+
+    // get the array from db.json
+    let dataFromDb = fs.readFileSync(filePath, "utf-8");
+
+    dataFromDb = JSON.parse(dataFromDb);
+
+    const dataToSave = [...dataFromDb, noteToSave];
+
+    fs.writeFileSync(filePath, JSON.stringify(dataToSave), "utf-8");
+    res.status(200).json(dataToSave);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "Something went wrong!" });
+  }
+
+  // add a unique id to the note
+  // we should add the new note to the notes array in db.json
 });
 
+// Delete Route
 app.delete("/api/notes/:id", (req, res) => {
-        const deleteNote = re.body;
-        });
+  const id = req.params.id;
+  console.log(id);
+});
 
-
-
-    // Server listing
-    app.listen(3001, () => {
-        console.log("Hello Server!");
-    })
-
+// Server listing
+app.listen(3001, () => {
+  console.log("Hello Server!");
+});
