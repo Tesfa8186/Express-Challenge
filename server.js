@@ -4,6 +4,8 @@ const fs = require("fs");
 const { join } = require("path");
 const { v4: uuidv4 } = require("uuid");
 
+const PORT = process.env.PORT || 3001;
+
 let dbData = require("./db/db.json");
 
 const app = express();
@@ -71,6 +73,6 @@ app.delete("/api/notes/:id", (req, res) => {
 });
 
 // Server listing
-app.listen(3001, () => {
+app.listen(PORT, () => {
   console.log("Hello Server!");
 });
