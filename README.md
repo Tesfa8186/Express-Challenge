@@ -1,15 +1,12 @@
 # Title - Note Taker Application
 
-
 # Description
 
 This Note Taker application helps the user to write and save any notes.
 This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
-The application’s front end has already been created. 
+The application’s front end has already been created.
 My task was to build the back end, connect the two, and then deploy the entire application to Heroku.
-
-
 
 ## User Story
 
@@ -29,18 +26,14 @@ THEN that note appears in the right-hand column.
 WHEN I click on the Write icon in the navigation at the top of the page,
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column.
 
-
-
 ## Installation
+
 Installation of this application would be on the terminal using localhost server.
 
-
-
 ## Usage
+
 This application will help the user to record and save daily noets of business or private.
 On a busy environment it's important to note daily business or private thought to keep life in smouth movemnt.
-
-
 
 ## Links
 
@@ -50,9 +43,6 @@ On a busy environment it's important to note daily business or private thought t
 
 [The URL of GitHub Repository](https://github.com/Tesfa8186/Express-Challenge)
 
-[The URL of Heroku deployemnet]()
+[The URL of Heroku deployemnet](https://dashboard.heroku.com/apps/fathomless-brook-35601)
 
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-
-
-
