@@ -4,7 +4,7 @@ const fs = require("fs");
 const { join } = require("path");
 const { v4: uuidv4 } = require("uuid");
 
-const dbData = require("./db/db.json");
+let dbData = require("./db/db.json");
 
 const app = express();
 
@@ -45,7 +45,7 @@ app.post("/api/notes", (req, res) => {
     dataFromDb = JSON.parse(dataFromDb);
 
     const dataToSave = [...dataFromDb, noteToSave];
-
+    dbData = dataToSave;
     fs.writeFileSync(filePath, JSON.stringify(dataToSave), "utf-8");
     res.status(200).json(dataToSave);
   } catch (error) {
@@ -60,7 +60,14 @@ app.post("/api/notes", (req, res) => {
 // Delete Route
 app.delete("/api/notes/:id", (req, res) => {
   const id = req.params.id;
+  const filePath = join(__dirname, "./db/db.json");
+  let dataFromDb = fs.readFileSync(filePath, "utf-8");
+
+  dataFromDb = JSON.parse(dataFromDb);
+  dbData = dataFromDb.filter((note) => note.id !== id);
+  fs.writeFileSync("./db/db.json", JSON.stringify(dbData));
   console.log(id);
+  res.json("note with the id ${note_id} has been deleted!");
 });
 
 // Server listing
