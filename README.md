@@ -43,6 +43,6 @@ On a busy environment it's important to note daily business or private thought t
 
 [The URL of GitHub Repository](https://github.com/Tesfa8186/Express-Challenge)
 
-[The URL of Heroku deployemnet](https://dashboard.heroku.com/apps/fathomless-brook-35601)
+[The URL of Heroku deployemnet](https://mighty-wave-85232.herokuapp.com/)
 
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
