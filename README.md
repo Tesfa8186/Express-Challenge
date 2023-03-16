@@ -28,7 +28,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Installation
 
-Installation of this application would be on the terminal using localhost server.
+Installation of this application would be on the terminal using localhost server`http://localhost:3001`.
 
 ## Usage
 
